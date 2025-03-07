@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fine Dine Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MonLnwZaEiEi Restaurant</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#reservation" class="reservation-link">Reservation</a></li>
+            </ul>
+            <button class="nav-toggle">☰</button>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Experience MonLnwZaEiEi Restaurant</h1>
+            <p>Enjoy your meals na kub luv u jub jub.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn">View Menu</a>
+                <a href="#reservation" class="btn btn-outline">Make Reservation</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-tabs">
+            <button class="menu-tab active" data-category="starters">Starters</button>
+            <button class="menu-tab" data-category="mains">Main Course</button>
+            <button class="menu-tab" data-category="pizza">Pizza</button>
+            <button class="menu-tab" data-category="desserts">Desserts</button>
+            <button class="menu-tab" data-category="drinks">Drinks</button>
+        </div>
+        
+        <div class="menu-category active" id="starters">
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="images/bruschetta.jpg" alt="Bruschetta">
+                    <div class="menu-item-details">
+                        <h3>Bruschetta <span class="badge">Popular</span></h3>
+                        <p class="menu-item-desc">Fresh tomatoes, basil, and garlic on toasted artisan bread</p>
+                        <div class="menu-item-bottom">
+                            <p class="price">$8</p>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/calamari.jpg" alt="Calamari">
+                    <div class="menu-item-details">
+                        <h3>Crispy Calamari</h3>
+                        <p class="menu-item-desc">Lightly breaded and served with zesty marinara sauce</p>
+                        <div class="menu-item-bottom">
+                            <p class="price">$12</p>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/salad.jpg" alt="Caprese Salad">
+                    <div class="menu-item-details">
+                        <h3>Caprese Salad</h3>
+                        <p class="menu-item-desc">Fresh mozzarella, tomatoes, and basil with balsamic glaze</p>
+                        <div class="menu-item-bottom">
+                            <p class="price">$10</p>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/soup.jpg" alt="Lobster Bisque">
+                    <div class="menu-item-details">
+                        <h3>Lobster Bisque</h3>
+                        <p class="menu-item-desc">Creamy soup with chunks of fresh lobster and a hint of sherry</p>
+                        <div class="menu-item-bottom">
+                            <p class="price">$14</p>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="menu-category" id="mains">
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="images/steak.jpg" alt="Filet Mignon">
+                    <div class="menu-item-details">
+                        <h3>Filet Mignon <span class="badge">Chef's Choice</span></h3>
+                        <p class="menu-item-desc">8oz prime beef with truffle mashed potatoes and roasted vegetables</p>
+                        <div class="menu-item-bottom">
+                            <p class="price">$32</p>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/salmon.jpg" alt="Grilled Salmon">
+                    <div class="menu-item-details">
+                        <h3>Grilled Salmon</h3>
+                        <p class="menu-item-desc">Wild-caught salmon with lemon butter sauce and asparagus</p>
+                        <div class="menu-item-bottom">
+                            <p class="price">$26</p>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/pasta.jpg" alt="Pasta">
+                    <div class="menu-item-details">
+                        <h3>Truffle Pasta</h3>
+                        <p class="menu-item-desc">Homemade fettuccine with black truffle cream sauce and parmesan</p>
+                        <div class="menu-item-bottom">
+                            <p class="price">$22</p>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/risotto.jpg" alt="Mushroom Risotto">
+                    <div class="menu-item-details">
+                        <h3>Wild Mushroom Risotto <span class="badge">Vegetarian</span></h3>
+                        <p class="menu-item-desc">Creamy arborio rice with assorted wild mushrooms and white wine</p>
+                        <div class="menu-item-bottom">
+                            <p class="price">$20</p>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="menu-category" id="pizza">
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="images/margherita.jpg" alt="Margherita Pizza">
+                    <div class="menu-item-details">
+                        <h3>Margherita Pizza <span class="badge">Classic</span></h3>
+                        <p class="menu-item-desc">San Marzano tomatoes, fresh mozzarella, basil, and olive oil</p>
+                        <div class="menu-item-bottom">
+                            <p class="price">$14</p>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/truffle-pizza.jpg" alt="Truffle Pizza">
+                    <div class="menu-item-details">
+                        <h3>Truffle Mushroom Pizza</h3>
+                        <p class="menu-item-desc">White sauce, mushrooms, truffle oil, and fontina cheese</p>
+                        <div class="menu-item-bottom">
+                            <p class="price">$18</p>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/prosciutto-pizza.jpg" alt="Prosciutto Pizza">
+                    <div class="menu-item-details">
+                        <h3>Prosciutto & Arugula</h3>
+                        <p class="menu-item-desc">Thin-crust pizza with prosciutto di Parma, arugula, and balsamic glaze</p>
+                        <div class="menu-item-bottom">
+                            <p class="price">$16</p>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/pepperoni-pizza.jpg" alt="Pepperoni Pizza">
+                    <div class="menu-item-details">
+                        <h3>Pepperoni Supreme</h3>
+                        <p class="menu-item-desc">Classic pepperoni pizza with extra cheese and our secret spice blend</p>
+                        <div class="menu-item-bottom">
+                            <p class="price">$15</p>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="menu-category" id="desserts">
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="images/tiramisu.jpg" alt="Tiramisu">
+                    <div class="menu-item-details">
+                        <h3>Tiramisu <span class="badge">House Special</span></h3>
+                        <p class="menu-item-desc">Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone</p>
+                        <div class="menu-item-bottom">
+                            <p class="price">$9</p>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/cheesecake.jpg" alt="Cheesecake">
+                    <div class="menu-item-details">
+                        <h3>New York Cheesecake</h3>
+                        <p class="menu-item-desc">Creamy cheesecake with a graham cracker crust and seasonal berry compote</p>
+                        <div class="menu-item-bottom">
+                            <p class="price">$8</p>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/chocolate-lava.jpg" alt="Chocolate Lava Cake">
+                    <div class="menu-item-details">
+                        <h3>Chocolate Lava Cake</h3>
+                        <p class="menu-item-desc">Warm chocolate cake with a molten center, served with vanilla ice cream</p>
+                        <div class="menu-item-bottom">
+                            <p class="price">$10</p>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/panna-cotta.jpg" alt="Panna Cotta">
+                    <div class="menu-item-details">
+                        <h3>Vanilla Panna Cotta</h3>
+                        <p class="menu-item-desc">Silky smooth Italian custard with fresh berries and mint</p>
+                        <div class="menu-item-bottom">
+                            <p class="price">$7</p>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="menu-category" id="drinks">
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="images/wine.jpg" alt="Wine">
+                    <div class="menu-item-details">
+                        <h3>House Red Wine</h3>
+                        <p class="menu-item-desc">Glass of our premium house Cabernet Sauvignon</p>
+                        <div class="menu-item-bottom">
+                            <p class="price">$9</p>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/cocktail.jpg" alt="Signature Cocktail">
+                    <div class="menu-item-details">
+                        <h3>Signature Cocktail <span class="badge">Popular</span></h3>
+                        <p class="menu-item-desc">Our famous blend of premium vodka, fresh berries, and herbs</p>
+                        <div class="menu-item-bottom">
+                            <p class="price">$12</p>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/espresso.jpg" alt="Espresso">
+                    <div class="menu-item-details">
+                        <h3>Italian Espresso</h3>
+                        <p class="menu-item-desc">Double shot of our premium Italian roast coffee</p>
+                        <div class="menu-item-bottom">
+                            <p class="price">$4</p>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/mocktail.jpg" alt="Mocktail">
+                    <div class="menu-item-details">
+                        <h3>Berry Fusion Mocktail <span class="badge">Non-Alcoholic</span></h3>
+                        <p class="menu-item-desc">Refreshing blend of seasonal berries, mint, and sparkling water</p>
+                        <div class="menu-item-bottom">
+                            <p class="price">$6</p>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="cart-preview">
+        <div class="cart-header">
+            <h3>Your Order <span id="cart-count">(0)</span></h3>
+            <button id="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div id="cart-items">
+            <!-- Cart items will be added here dynamically -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-price">$0</span>
+            </div>
+            <button class="btn checkout-btn">Checkout</button>
+        </div>
+    </div>
+    
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Kod ja aroi loey na ja bok hai mai chuei gor long gin do aow aeng eiei .</p>
+    </section>
+    
+    <section id="reservation" class="reservation">
+        <h2>Make a Reservation</h2>
+        <form id="reservation-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="res-name">Name</label>
+                    <input type="text" id="res-name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="res-email">Email</label>
+                    <input type="email" id="res-email" placeholder="Your Email" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="res-date">Date</label>
+                    <input type="date" id="res-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="res-time">Time</label>
+                    <input type="time" id="res-time" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="res-guests">Number of Guests</label>
+                    <input type="number" id="res-guests" min="1" max="20" required>
+                </div>
+                <div class="form-group">
+                    <label for="res-occasion">Occasion (Optional)</label>
+                    <select id="res-occasion">
+                        <option value="">Select an Occasion</option>
+                        <option value="birthday">Birthday</option>
+                        <option value="anniversary">Anniversary</option>
+                        <option value="business">Business Meal</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="res-message">Special Requests</label>
+                <textarea id="res-message" placeholder="Any special requests or dietary requirements?"></textarea>
+            </div>
+            <button type="submit" class="btn">Reserve Table</button>
+        </form>
+        <p id="reservation-message"></p>
+    </section>
+    
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>somewhere in the earth</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+66 934343013</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>Pasit.b@ku.th</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <p>Mon-Fri: 11am-10pm<br>Sat-Sun: 10am-11pm</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <input type="text" id="subject" placeholder="Subject" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+        <p id="form-message"></p>
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Fine Dine</div>
+            <p>Exquisite dining experience since 2010</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">About</a>
+                <a href="#reservation">Reservation</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p class="copyright">© 2025 Fine Dine Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
